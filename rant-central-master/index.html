@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rant Central</title>
+    <link rel="stylesheet" type= "text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Archivo:400,700|Permanent+Marker&display=swap" rel="stylesheet">
+
+
+  </head>
+  <body>
+  <div class="topnav">
+
+  <a class="loginRant" onclick="displayLogIn(event)">Login</a>
+  <a class="signup" onclick="displaySignUp(event)">Sign-Up</a>
+
+</div>
+
+<div>
+  <h1 class="rant-header">🗣️Rant Central<i class="fa fa-address-card fa-spin"></i></h1>
+  <p class="rant-quote">“The best and most beautiful things in the world<br>cannot be seen or even touched.
+    <br>They must be felt with a rant.”</p>
+</div>
+
+<!-- log in form  -->
+
+<div class="loginForm">
+    <button onclick="hideLogin()"><i class="fa fa-times"></i></button>
+    <form onSubmit="userLog(event)">
+    <input
+      id="loginEmail"
+      type="email"
+      placeholder="Email Address">
+    <input
+      id="loginPassword"
+      type="password"
+      placeholder="password">
+
+    <button class="rantAway" type="submit" onclick="loginUser(event)">Rant Away!</button>
+  </form>
+</div>
+
+<!-- sign up form  -->
+
+<div id="signUpForm">
+  <button onclick="hideSignUp()"><i class="fa fa-times"></i></button>
+  <br/>
+  <h3> Sign up for Rant Central</h3><br/>
+  <form onSubmit="postData(event)">
+    email:
+    <input id="signUpEmail" type="email" placeholder="Email address"/><br/></br>
+    username:
+    <input id="signUpUsername" type="text" placeholder="username"/></br></br>
+    password:
+    <input id ="signUpPassword" type="password"/></br></br>
+    <input class="signUpSubmit" type="submit"/>
+  </form>
+</div>
+
+
+<footer class="footer">
+  <p>By Ramel Haines and Christine Le</p>
+</footer>
+ <!-- landing page should have:
+1. a nav bar with Sign Up and Login options to the left
+2. center of the page will have logo and an avatar
+
+Main page should have:
+1a. same nav bar from landing page, but with Logo, Home, Username
+1b. Username has drop down menu with options Update, Profile, Log Out
+2a. Posts div with scroll
+2b. Each post has title of post, post contents, and comments box and an 'X' on upper right corner
+3a. Sidebar to the right
+4. Regular footer, with group members' names
+
+Important Class Assignments:
+#userPost - A user's post
+#userPostTitle - Title in user post
+#userPostContent - Content in user post
+#userPostComments - Comments in user post
+-->
+
+<!-- main page -->
+
+
+<script src="js/script.js"></script>
+  </body>
+</html>
